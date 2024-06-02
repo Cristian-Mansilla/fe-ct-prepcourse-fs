@@ -3,6 +3,10 @@ function cambiarCadena(string, callback) {
    // La función de callback se encargará de recibir el string y devolverlo con los cambios.
    // Si no se recibe una función callback entonces se debe retornar el string original.
    // Tu código:
+   return arguments.length === 1 ? string : callback(string)   
 }
-
+function funcionInvocada(s) {
+   return s.toUpperCase()
+}
+console.log(cambiarCadena("hola",funcionInvocada))
 module.exports = cambiarCadena;
