@@ -9,8 +9,4 @@ function callback(n1,n2) {
   return n1 + n2
 }
 console.log(operacionMatematica(2,3,callback))
-
-let i = '10'<'2'
-console.log(i)
-
 module.exports = operacionMatematica;
