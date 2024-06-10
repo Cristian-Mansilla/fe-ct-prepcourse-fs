@@ -5,10 +5,10 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
   // Tu código:
   let palabrasConcat = ""
-  for (string of palabras) {
-    palabrasConcat = ''.concat(palabras)
+  for (let string of palabras) {
+    palabrasConcat = palabrasConcat.concat(" ",string)
   }
-  return palabrasConcat
+  return palabrasConcat.trim()
 }
 console.log(dePalabrasAFrase(["Hola","Mundo","Comenzamos","Una"]))
 module.exports = dePalabrasAFrase;
